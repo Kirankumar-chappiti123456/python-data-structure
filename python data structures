@@ -9,6 +9,20 @@ list contains a square brackets
 list can store any data type in it
 list is order and changeable and allow dulplicate elements
 list is mutable because we can the order of the list by accessing it directly as a part of assignment statement.
+list are indexed.
+list index are starting from 0.
+
+
+and we have the some of the list methods:
+append()
+insert()
+clear()
+pop()
+remove()
+REVERSE()
+count()
+index()
+
 
 duplicate elements:
 lists=["kiran","kumar","kiran","murali"]
@@ -36,4 +50,160 @@ kiran
 kumar
 kiran
 murali
+
+
+append(): it will add the item at the end the list.
+mylist=["kiran","kumar","chappiti","murali"]
+mylist.append("yadav")
+print(mylist)
+output:
+['kiran', 'kumar', 'chappiti', 'murali', 'yadav']
+
+
+insert():it will add the item at any position:
+mylist=["kiran","kumar","chappiti","murali"]
+mylist.insert(2,"yadav")
+print(mylist)
+output:
+['kiran', 'kumar', 'yadav', 'chappiti', 'murali']
+
+
+remove():we can remove the item in the list using the reemove()func and we can remove only one at a time in the list.
+mylist=["kiran","kumar","chappiti","murali"]
+mylist.remove("kiran")
+print(mylist)
+output:
+['kumar', 'chappiti', 'murali']
+
+
+clear():we can delte the whole list simple using the clear() fun.
+mylist=["kiran","kumar","chappiti","murali"]
+mylist.clear()
+print(mylist)
+output:
+[] it show the empty list.
+
+
+pop():it will remove the last item in the list. 
+mylist=["kiran","kumar","chappiti","murali"]
+mylist.pop()
+print(mylist)
+output:
+['kiran', 'kumar', 'chappiti']
+
+
+count(): it will count item in the list how many time it will be present.
+mylist=["kiran","kumar","chappiti","murali","kiran"]
+print(mylist.count("kiran"))
+output:
+2.
+
+index():it will show the item present at the index.
+mylist=["kumar","chappiti","murali","kiran"]
+print(mylist.index("kiran"))
+output:
+3.
+
+how to find the any item present in the list are not.
+mylist=["kumar","chappiti","murali","kiran"]
+a=input("enter the name")
+if a in mylist:
+    print("present")
+else:
+    print("not present")
+output:
+enter the namekiran
+present
+
+how to replace the item in the list:
+mylist=["kumar","chappiti","murali","kiran"]
+mylist[0]="kiran"
+mylist[3]="kumar"
+print(mylist)
+
+output:
+['kiran', 'chappiti', 'murali', 'kumar']
+
+indexing:
+mylist=["kumar","chappiti","murali","kiran"]
+mylist[0:4]=["kiran"] it will remove from 0 t0 3 and place it kiran.
+mylist[3:4]=["kumar"] it will remove from 3 to 4 and place it kumar.
+mylist[1:1]=[""]
+print(mylist)
+
+for loop:
+mylist=["kumar","chappiti","murali","kiran"]
+for i in range(len(mylist)):
+    if mylist[i]=="kiran":
+        mylist[i]="apple"
+print(mylist)
+
+output:
+['kumar', 'chappiti', 'murali', 'apple']
+
+how to check my list is empty or not:
+mytuple=["kiran","kumar","chappiti","yadav"]
+if mytuple==[]:
+    print("empty")
+else:
+    print(" not empty")
+output:not empty
+
+
+mytuple=[]
+if mytuple==[]:
+    print("empty")
+else:
+    print(" not empty")
+output:
+empty.
+
+mytuple=["kiran","kumar","chappiti","yadav"]
+if not mytuple:
+    print("empty")
+else:
+    print(" not empty")
+output:
+not empty.
+
+Python Program to Randomly Select an Element From the List:
+import random
+mytuple=["kiran","kumar","chappiti","yadav"]
+print(random.choice(mylist))
+
+how to find the last element in the list:
+
+
+
+
+
+tuple:
+tuple are ordered and unchangeable and allow the duplicate elements in the tuple.
+tuple are immutable.
+tuple can't change order.
+it contains the round brakets.
+
+mytuple=("kiran","kumar","chappiti","yadav")
+mytuple.append("kumar")
+print(mytuple)
+
+output:
+Traceback (most recent call last):
+  File "<string>", line 2, in <module>
+ERROR!
+AttributeError: 'tuple' object has no attribute 'append'
+
+
+but we can change order using converting the tuple to list:
+mytuple=("kiran","kumar","chappiti","yadav")
+mylist=list(mytuple)
+mylist.append("apple")
+mytuple=tuple(mylist)
+print(mytuple)
+ output:
+('kiran', 'kumar', 'chappiti', 'yadav', 'apple')
+
+
+
+
 
