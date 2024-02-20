@@ -224,6 +224,14 @@ set is unordered and unchangeable and it didn't allow the duplicate elements in 
 set is mutable.because we can add and remove the items in the set. using the add and remove func.
 set is unindexed.and it doesn't have the specified order to show.it is random of the item
 
+some of the methods:
+add()
+remove()
+update()
+intersection()
+intersection_update()
+pop().
+
 ex:
 a={"kiran","kumar","chappiti"}
 print(a)
@@ -232,6 +240,11 @@ o/p:
 {'kumar', 'kiran', 'chappiti'}
 {'chappiti', 'kumar', 'kiran'}
 
+
+pop():remove the one item in the set at any position:
+myset={"kiran","kumar","chappiti"}
+myset.pop()
+print(myset)
 add func:
 a={"kiran",1,"kumar",2}
 a.add("yadava")
@@ -246,6 +259,131 @@ print(a)
 o/p:
 {'kumar', 2, 'kiran', 'yadava'}
 
+how to remove duplicate elements using set:
+myset={1,2,3,2,"kiran","kumar","chappiti","kiran"}
+print(myset)
+o/p:
+{1, 2, 3, 'kumar', 'kiran', 'chappiti'}
 
+how to show only duplicate elements in two list using intersection_update or intersection:
+myset={"kiran","kumar","chappiti"}
+myset1={"murali","yadav","kiran"}
+myset.intersection_update(myset1)
+print(myset)
+o/p:
+{'kiran'}
+
+or 
+myset={"kiran","kumar","chappiti"}
+myset1={"murali","yadav","kiran"}
+z=myset.intersection(myset1)
+print(z)
+
+o/p:
+{'kiran'}
+
+
+how can we add tuple to set using the add() fun:
+myset={"kiran","kumar","chappiti"}
+mytupke=("murali","yadav")
+myset.add(mytupke)
+print(myset)
+
+
+how cane we add list to set using update() func:
+myset={"kiran","kumar","chappiti"}
+mylist=["murali","yadav"]
+myset.add(mylist)
+print(myset)
+
+o/p:
+{'yadav', 'kumar', 'kiran', 'murali', 'chappiti'}
+
+
+
+
+dictionary:
+dic are used to store the data value in keys: value pairs.
+dic items are ordered and changeable and it doesn't allow the duplicate element and it override the duplicate elements.
+dic is mutable because we can add and remove and update the dic.
+dic have the keys and values.
+
+some of the methods:
+add()
+update()
+pop()
+items()
+values()
+keys()
+get().
+
+how to access the element:
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+print(mydic["brand"]) or print(mydic.get("brand"))
+
+
+keys:accessing:
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+print(mydic.keys())
+o/p:
+dict_keys(['brand', 'type', 'color', 'year'])
+
+values:accessing:
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+print(mydic.values())
+o/p:
+dict_values(['maruti', 'suv', 'red', 2012])
+
+how to add the item to dict:using indexing:
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+mydic["CC"]=1500
+print(mydic)
+
+O/P:{'brand': 'maruti', 'type': 'suv', 'color': 'red', 'year': 2012, 'CC': 1500}
+
+update():
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+mydic.update({"year":2013})
+print(mydic.items()) or print(mydic).
+
+o/p:
+dict_items([('brand', 'maruti'), ('type', 'suv'), ('color', 'red'), ('year', 2013)])
+
+items():
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+print(mydic.items())
+
+o/p:
+dict_items([('brand', 'maruti'), ('type', 'suv'), ('color', 'red'), ('year', 2012)])
+
+
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+for i in mydic:
+    print(i) it will be show the keys.
+o/p:
+brand
+type
+color
+year
+
+
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+for i in mydic:
+    print(mydic[i])
+o/p:
+maruti
+suv
+red
+2012
+
+both keys:values:
+mydic={"brand" : "maruti", "type" :"suv" ,"color" : "red","year": 2012}
+for x,y in mydic.items():
+    print(x,y)
+o/p:
+brand maruti
+type suv
+color red
+year 2012.
 
 
