@@ -19,6 +19,7 @@ insert()
 clear()
 pop()
 remove()
+extend()
 REVERSE()
 count()
 index()
@@ -104,6 +105,19 @@ print(mylist.index("kiran"))
 output:
 3.
 
+extend():we can add the one list to another list using extend() or "+" operator.and it will add at the end of the another list.
+a=["kiran","kumar"]
+b=["chappiti","yadav"]
+a.extend(b)
+print(a)
+
+or
+
+a=["kiran","kumar"]
+b=["chappiti","yadav"]
+c=a+b
+print(c)
+
 how to find the any item present in the list are not.
 mylist=["kumar","chappiti","murali","kiran"]
 a=input("enter the name")
@@ -182,6 +196,7 @@ tuple are ordered and unchangeable and allow the duplicate elements in the tuple
 tuple are immutable.
 tuple can't change order.
 it contains the round brakets.
+tuple have the methods are index and count.
 
 mytuple=("kiran","kumar","chappiti","yadav")
 mytuple.append("kumar")
@@ -203,6 +218,33 @@ print(mytuple)
  output:
 ('kiran', 'kumar', 'chappiti', 'yadav', 'apple')
 
+
+set:
+set is unordered and unchangeable and it didn't allow the duplicate elements in the set.
+set is mutable.because we can add and remove the items in the set. using the add and remove func.
+set is unindexed.and it doesn't have the specified order to show.it is random of the item
+
+ex:
+a={"kiran","kumar","chappiti"}
+print(a)
+o/p:
+{'kiran', 'chappiti', 'kumar'}
+{'kumar', 'kiran', 'chappiti'}
+{'chappiti', 'kumar', 'kiran'}
+
+add func:
+a={"kiran",1,"kumar",2}
+a.add("yadava")
+print(a)
+
+remove func:
+a={"kiran",1,"kumar",2}
+a.add("yadava")
+a.remove(1)
+print(a)
+
+o/p:
+{'kumar', 2, 'kiran', 'yadava'}
 
 
 
