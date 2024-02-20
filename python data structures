@@ -1,0 +1,39 @@
+python data structure:
+list
+tuple
+set
+dictionary
+
+list:list is used to store many item in a  single variable.
+list contains a square brackets
+list can store any data type in it
+list is order and changeable and allow dulplicate elements
+list is mutable because we can the order of the list by accessing it directly as a part of assignment statement.
+
+duplicate elements:
+lists=["kiran","kumar","kiran","murali"]
+print(lists[0])
+print(lists[1])
+print(lists[2])
+print(lists[3])
+output:
+kiran
+kumar
+kiran
+murali
+
+lists=["kiran","kumar","kiran","murali"]
+print(lists)
+output:
+['kiran', 'kumar', 'kiran', 'murali']
+
+lists=["kiran","kumar","kiran","murali"]
+for i in lists:
+    print(i)
+
+output:
+kiran
+kumar
+kiran
+murali
+
