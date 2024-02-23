@@ -1,2 +1,9 @@
 python oops:
-object 
+
+object oriented programming language:
+object oriented programming language which uses classes and object for computing.
+it's aim to implement real world entity like inheritance,polymorphism,encapsulation and the data abstraction in the programming.
+The main concept of oop's is to bind the data and function together to work as a single unit.so that no other part of the code can access this data.
+
+advantages of oop's:
+
