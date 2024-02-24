@@ -6,4 +6,80 @@ it's aim to implement real world entity like inheritance,polymorphism,encapsulat
 The main concept of oop's is to bind the data and function together to work as a single unit.so that no other part of the code can access this data.
 
 advantages of oop's:
+Development and maintance the python code is easier than the procedural language.
+can easily slove the real world problem and it doesn't work step by step instructions.
+data in python code are secured due to it'sspecial features "data hidding".
+
+
+principle of oop's:
+Class 
+Object
+Method
+Inheritance
+Polymorphism
+Encapsulation
+Data abstraction.
+
+
+Class:
+A class is collection of objects
+A class conatins the blueprint for creating the objects
+Class is a logical entity and it have some attributes and methods.
+EX: class employee:
+    employee id=1
+    employee age=22
+    employee salary....etc
+In employee class we have some of the attributes and methods like emp id,age,salary,phone no,email id etc.
+Class are created by class "keyword".
+Attributes are the variable and that belong to that class.
+Attributes are alway public and we can access the variable using the "." or dot operator.
+
+
+syntax:
+class classname:
+statement 1
+and 
+statement 2 
+
+ex:
+class employee:
+    x=5
+p=employee()
+print(p.x)
+
+o/p:5
+
+
+object: object is an entity that has state and behaviour and  identity.
+It may be a real world object like pen,chair and mouse,car.
+Everything in python is an object and object has the some attributes and methods.
+
+syntax:
+object= class name(parameters)
+p     = employee("kiran",26)
+
+Ex:
+class employee:
+    def __init__(s,name,age):
+        s.name=name
+        s.age=age
+p=employee("kiran",26)
+print(p.name)
+print(p.age)
+
+o/p:
+kiran 
+26.
+
+Self parameter:
+self parameter is a refference of the current instance of a class and it is used to access the variable that belong to that class.
+
+init function:
+
+
+
+
+
+
+
 
