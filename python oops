@@ -75,11 +75,155 @@ Self parameter:
 self parameter is a refference of the current instance of a class and it is used to access the variable that belong to that class.
 
 init function:
+init function is assign values to object properities.When the object is being created.
+
+ex:
+class employee:
+    def __init__(s,name,age):
+        s.name=name
+        s.age=age
+p=employee("kiran",26)
+print(p.name)
+print(p.age)
+
+Methods:
+Method is a  function that is associated with object.
+Method is not a unique to class instance and any object type have the method.
+
+ex:
+class employee:
+    def __init__(s,name,age):
+        s.name=name
+        s.age=age
+    def myfun(s):------------------------------------------> Method
+        print(f"my name is {s.name},and age is {s.age}")
+p=employee("kiran",26)
+p.myfun()
+
+inheritance:
+inheritance is a process of creating a new class from an existing class.
+
+type of inheritance:
+1.Single inheritance
+2.Multiple inheritance
+3.Multilevel inheritance
+4.Hierarchical inheritance
+5.Hybrid inheritance
+
+Single inheritance:
+When a child class inherit or access the data only from one parent is called the single inheritance.
+
+ex:
+class parent:
+    def __init__(s,name,age):
+        s.name=name
+        s.age=age                 # parent class
+        
+
+class child(parent):
+    def __init__(s,name,age):
+        super().__init__(name,age) #or parent.__init__(s,name,age) #child class
+    def myfun(s):
+        print(f"my name is {s.name},and age is {s.age}")
+        
+        
+p=child("kiran",26)
+p.myfun()
+
+o/p:my name is kiran,and age is 26
+
+
+multiple inheritance:
+When a child class inherit or acess the data from one or two parent class is called multiple inheritance.
+
+ex:
+class father:
+    def __init__(s,name):
+        s.name=name    # parent class
+        
+class mother:
+    def __init__(s,age):
+        s.age=age      #parent class
+
+class child(father,mother):     #child
+    def __init__(s,name,age):
+        father.__init__(s,name) #or parent.__init__(s,name,age) #child class
+        mother.__init__(s,age)  
+        
+    def myfun(s):
+        print(f"my name is {s.name},and age is {s.age}")
+        
+        
+p=child("kiran",26)
+p.myfun()
 
 
 
+multilevel inheritance:
+When a child class become a parent class  for another child class is called multilevel inheritance.
+
+ex:
+class father:
+    def __init__(s,name):
+        s.name=name    # parent class
+        
+class mother:
+    def __init__(s,age):
+        s.age=age      #parent class
+
+class child(father,mother):     #child or becoming the parent class for another child class.
+    def __init__(s,name,age):     
+        father.__init__(s,name) #or parent.__init__(s,name,age) #child class
+        mother.__init__(s,age)  
+        
+class anotherchild(child):         #anotherchild class
+    def __init__(s,name,age):
+        super().__init__(name,age)
+        
+    def myfun(s):
+        print(f"my name is {s.name},and age is {s.age}")
+        
+        
+p=anotherchild("kiran",26)
+p.myfun()
 
 
+hierachical inheritance:
+When one or two child class  inherit only one parent class and get the same data is called the hierarchical inheritance.
 
+ex:
 
+class employee:
+    #constructor
+    def __init__(s,name,age):
+        #private member.
+        s.name=name    # parent class
+        s.age=age
+        
+class testing(employee):
+    def __init__(s,name,age,itemp):
+        s.itemp=itemp
+        super().__init__(name,age)
+    def fun1(s):
+        print(f"The it emp name is {s.name},and age is {s.age},and it emp {s.itemp}")
+        
+class coder(employee):
+    def __init__(s,name,age,itemp):
+        s.itemp=itemp
+        super().__init__(name,age)
+    def fun2(s):
+        print(f"The it emp name is {s.name},and age is {s.age},and it emp {s.itemp}")
+        
+s=testing("kiran",26,"tester")
+s.fun1()
+
+s1=coder("murali",55,"coder")
+s1.fun2()
+
+o/p:
+The it emp name is kiran,and age is 26,and it emp tester
+The it emp name is murali,and age is 55,and it emp coder.
+
+hybrid inheritance:
+when one or two child inherit from one or more parent class is called hybrid inheritance.
 
